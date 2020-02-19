@@ -1,0 +1,19 @@
+@import "../index.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  background-color: $mainColor;
+  h1 {
+    margin-left: 1rem;
+  }
+  button {
+    border: none;
+    color: $mainColor;
+    span {
+      font-size: 1.6rem;
+    }
+  }
+}
