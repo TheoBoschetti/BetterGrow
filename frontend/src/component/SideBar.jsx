@@ -9,11 +9,11 @@ export default function SideBar() {
         <Icon className="mainIcon" type="fund" />
         <div>
           <div>
-            <Icon type="message" />
+            <Icon className="secondaryIcon" type="message" />
             <p>Request a feedback</p>
           </div>
           <div>
-            <Icon type="profile" />
+            <Icon className="secondaryIcon" type="profile" />
             <p>Your feedback</p>
           </div>
         </div>

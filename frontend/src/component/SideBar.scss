@@ -21,17 +21,20 @@
     align-items: center;
     width: 100%;
     text-align: center;
-    color: white;
+    color: $thirdColor;
   }
-  i {
+  .secondaryIcon {
     text-align: left;
     svg {
       font-size: 4rem;
-      color: white;
+      color: $thirdColor;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
   .mainIcon svg {
-    color: rgba(0, 0, 0, 0.85);
+    color: $thirdColor;
     font-size: 6rem;
     margin-top: 0.6rem;
   }

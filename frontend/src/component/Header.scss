@@ -16,10 +16,16 @@
   h1 {
     line-height: 0;
     font-weight: bold;
+    color: $thirdColor;
   }
   button {
+    background: $thirdColor;
     border: none;
     color: $mainColor;
+    &:hover {
+      background: $secondaryColor;
+      color: white;
+    }
     span {
       font-size: 1.6rem;
     }
@@ -31,7 +37,7 @@
     i {
       display: block;
       svg {
-        color: rgba(0, 0, 0, 0.85);
+        color: $thirdColor;
         font-size: 6rem;
       }
     }
