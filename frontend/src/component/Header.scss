@@ -7,12 +7,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1.8rem;
   background-color: $mainColor;
   width: calc(100% - 10rem);
+  i {
+    display: none;
+  }
   h1 {
-    margin-left: 1rem;
     line-height: 0;
+    font-weight: bold;
   }
   button {
     border: none;
@@ -20,5 +23,18 @@
     span {
       font-size: 1.6rem;
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    i {
+      display: block;
+      svg {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 6rem;
+      }
+    }
+    width: 100%;
   }
 }

@@ -8,10 +8,14 @@ export default function SideBar() {
       <div className="sideBarContainer">
         <Icon className="mainIcon" type="fund" />
         <div>
-          <Icon type="message" />
-          <p>Request a feedback</p>
-          <Icon type="profile" />
-          <p>Your feedback</p>
+          <div>
+            <Icon type="message" />
+            <p>Request a feedback</p>
+          </div>
+          <div>
+            <Icon type="profile" />
+            <p>Your feedback</p>
+          </div>
         </div>
       </div>
     </div>
