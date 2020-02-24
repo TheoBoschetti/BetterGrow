@@ -1,0 +1,23 @@
+.titleBar {
+  position: fixed;
+  top: 6rem;
+  right: 0;
+  width: calc(100% - 10rem);
+  background-color: white;
+  border-radius: 10px 0px 0px 0px;
+  h2 {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .titleBar {
+    width: 100%;
+    top: 9rem;
+    border-radius: 0;
+    h2 {
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+}

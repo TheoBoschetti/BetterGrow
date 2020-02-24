@@ -1,0 +1,72 @@
+@import "../index.scss";
+
+.sideBar {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 10rem;
+  background: linear-gradient(180deg, $mainColor 0%, $secondaryColor 80.92%);
+  .sideBarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+    min-height: 350px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: $thirdColor;
+  }
+  .secondaryIcon {
+    text-align: left;
+    svg {
+      font-size: 4rem;
+      color: $thirdColor;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .mainIcon svg {
+    color: $thirdColor;
+    font-size: 6rem;
+    margin-top: 0.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 0.7rem 0 4rem 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sideBar {
+    width: 100%;
+    height: 8rem;
+    bottom: 0;
+    flex-direction: row;
+    background: linear-gradient(180deg, $mainColor 0%, $secondaryColor 95.92%);
+    .sideBarContainer {
+      div {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        div {
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 5px;
+        }
+      }
+    }
+    .mainIcon {
+      display: none;
+    }
+  }
+}

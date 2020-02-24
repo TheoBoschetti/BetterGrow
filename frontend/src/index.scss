@@ -1,0 +1,42 @@
+@import "~antd/dist/antd.css";
+
+$mainColor: #440cce;
+$secondaryColor: #110036;
+$thirdColor: #ededed;
+$backgroundColor: #faf9ff;
+
+body {
+  background-color: $backgroundColor;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.primaryButton {
+  background-color: $mainColor;
+  border: none;
+  color: #ffffff;
+  span {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 42%;
+  }
+}
